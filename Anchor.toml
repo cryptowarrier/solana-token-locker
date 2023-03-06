@@ -1,0 +1,17 @@
+[features]
+seeds = false
+skip-lint = false
+[programs.localnet]
+token_locker = "AEH6XDoe6hK6XNVJpuVos19xUaE1yXNdjcVK8RRifpUB"
+[programs.devnet]
+token_locker = "AEH6XDoe6hK6XNVJpuVos19xUaE1yXNdjcVK8RRifpUB"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "devnet"
+wallet = "/home/peace/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
